@@ -1,3 +1,4 @@
+package predicate;
 import java.util.function.*;;
 public class predicateEx{
     public static void main(String[] args){

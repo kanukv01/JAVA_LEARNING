@@ -1,3 +1,4 @@
+package predicate;
 import java.util.ArrayList;
 import java.util.function.*;
 public class predicateExample3 {
