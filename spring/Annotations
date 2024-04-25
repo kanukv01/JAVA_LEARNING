@@ -1,0 +1,71 @@
+
+
+Spring Container - Singleton, prototype scope.
+
+Singleton- Spring create only 1 instance by default. which means only 1 object for each class Prototype-multiple object whenever we getBean(). we need to mention in @Component @Scope(value="prototype")
+
+@Component - by specifing this we are telling the spirng to create a object of that class where we mentioned @comp..
+
+This is how spring knows to create object -if we have 10 classes, it will create for only classes with @Comp.. annotation.
+
+Spring BOOT:
+
+Spring initializr - the mail to develop spring boot applications
+
+SB Architecture:
+
+Presentation Layer- front end
+
+Business Layer - business logic, validation
+
+Persistence Layer = storeage logic
+
+Database Layer - actual database
+
+SpringBoot Annotations:
+
+1. @Required used to bean setter method to indicate it is a required proerty
+
+2.@Autowired - Autowire spring bean on setter methods, No, byName, by Type
+
+by default byType is used
+
+@Qualifier("laptop)- to search by Name)
+
+2 @Configuration userl hy spring containers as a source of hean definition
+
+3.@Configuration used by spring containers as a source of bean definition
+
+4.@ComponentScan - when we want to scan a paxkage for beans, used along with @Configuration
+
+5.@Bean method level annotation of <bean>
+
+Stereotype Annotations:
+
+6.@Component it is a class level annotation it is used to mark a Java class as a bean
+
+7.@ controller it is a specification of underrate component it marks class as a web request handler. It is mostly used with @RequestMapping annotation. (defines the path)
+
+8.@Service- it is also a used at class level it tells the spring that class contains business logic
+
+9.@ repository it is a class level annotation the repository is it Dao that accesses the database directly
+
+Spring Boot Annotations:
+
+1.@SpringBootApplication - defines the class as spring boot application.- it auto configures the beans It is a combination of three annotations @EnableAutoConfiguration, @ComponentScan, and @Configuration.
+
+Spring Boot starters:
+
+Spring Boot Starters are the dependency descriptors.
+
+ex: spring-boot-starter-*
+
+-For using jsp-spring-boot-starter-web
+
+-if we want to use JPA, we need include spring-boot-starter-data-jpa dependency in our pom.xml file of the project.
+
+Spring Boot Actuator:
+
+1.End Points
+
+2.Metrics
