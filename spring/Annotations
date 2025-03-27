@@ -30,7 +30,7 @@ SpringBoot Annotations:
 
 by default byType is used
 
-@Qualifier("laptop)- to search by Name)
+@Qualifier("laptop)- to search by Name) The @Qualifier annotation in Spring is used to resolve ambiguity when multiple beans of the same type are available for dependency injection. It works in conjunction with the @Autowired annotation to specify which exact bean should be injected.
 
 2 @Configuration userl hy spring containers as a source of hean definition
 
